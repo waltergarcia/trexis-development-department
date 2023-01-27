@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "e918b4f0-b3da-4b1c-9ff9-a75ef37227d8",
+		"name": "Trexis Info",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/trexis/department/development/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trexis",
+						"department",
+						"development",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_manager",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Linus Torvalds\",\r\n    \"email\": \"linus_torvalds@trexis.net\",\r\n    \"role\": \"Manager\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/trexis/department/development/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trexis",
+						"department",
+						"development",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_senior_developer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Vlad Mihalcea\",\r\n    \"email\": \"vlad_mihalcea@trexis.net\",\r\n    \"role\": \"Developer\",\r\n    \"level\": \"Senior\",\r\n    \"manager\": \"Linus Torvalds\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/trexis/department/development/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trexis",
+						"department",
+						"development",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_junior_developer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jeff Bezos\",\r\n    \"email\": \"jeff_bezos@trexis.net\",\r\n    \"role\": \"Developer\",\r\n    \"level\": \"Junior\",\r\n    \"manager\": \"Linus Torvalds\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/trexis/department/development/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trexis",
+						"department",
+						"development",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_qa_tester",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ada Lovelace\",\r\n    \"email\": \"ada_lovelace@trexis.net\",\r\n    \"role\": \"QA Tester\",\r\n    \"manager\": \"Linus Torvalds\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/trexis/department/development/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trexis",
+						"department",
+						"development",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_another_manager",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dennis Ritchie\",\r\n    \"email\": \"Dnnis Ritchie@trexis.net\",\r\n    \"role\": \"Manager\",\r\n    \"manager\": \"Linus Torvalds\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/trexis/department/development/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trexis",
+						"department",
+						"development",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_another_junior_developer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tim Cook\",\r\n    \"email\": \"tim_cook@trexis.net\",\r\n    \"role\": \"Developer\",\r\n    \"level\": \"Junior\",\r\n    \"manager\": \"Dennis Ritchie\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/trexis/department/development/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trexis",
+						"department",
+						"development",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
